@@ -33,8 +33,8 @@
 
   - name: print the output
     ansible.builtin.debug:
-      msg: "MYSQL Info :: {{ sql-output }}"
+      msg: "MYSQL Info :: {{ mysql_info }}"
 
   - name: setting up the root password
     ansible.builtin.command: "mysql_secure_installation --set-root-pass {{ mysql_passwd }}"
-    when: sql-output.failed is true
+    when: mysql_info.failed is true

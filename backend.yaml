@@ -58,7 +58,7 @@
       state: import
       name: all
       login_user: root
-      login_password: saikumar@123
+      login_password: ExpenseApp@1
       login_host: mysql.techgama.site
       target: /app/scheme/backend.sql
 
